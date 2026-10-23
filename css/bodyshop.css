@@ -1,0 +1,150 @@
+/* Base Reset & Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1d20;
+    color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* App Container */
+.app-container {
+    background-color: #24282c;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border-top: 5px solid #ff4d4d; /* Racing Red Accent */
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+    color: #ff4d4d;
+}
+
+/* Forms & Input Fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #adb5bd;
+}
+
+input[type="text"], 
+input[type="number"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #2c3136;
+    border: 1px solid #495057;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #ff4d4d;
+}
+
+/* Service Options Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #2c3136;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #495057;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.service-card:hover {
+    border-color: #ff4d4d;
+    background-color: #343a40;
+}
+
+.service-card.selected {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #ffffff;
+}
+
+/* Primary Button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 15px;
+}
+
+.btn-submit:hover {
+    background-color: #e60000;
+}
+
+/* Dynamic Summary / Output Box */
+.summary-box {
+    margin-top: 25px;
+    background-color: #1a1d20;
+    border-left: 4px solid #ff4d4d;
+    padding: 15px;
+    border-radius: 4px;
+    display: none; /* Can be toggled to 'block' via JS */
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.summary-total {
+    border-top: 1px solid #495057;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
